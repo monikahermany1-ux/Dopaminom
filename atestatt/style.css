@@ -1,0 +1,242 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    text-align: justify; 
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+p {
+    text-indent: 15pt; 
+    margin-bottom: 1em; 
+}
+
+#main {
+    margin: 20px;
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+}
+
+#menu {
+    width: 20%;
+    display: flex; 
+    flex-direction: column;
+    margin-left: 10pt;
+    margin-right: 10pt;
+}
+
+#menu #logo img {
+    width: 80px; 
+    height: auto; 
+    border-radius: 50%;
+    margin-left: 10px; 
+    margin-bottom: 10pt;
+}
+
+#menu nav ul {
+    list-style-type: none; 
+    margin-top: 20px;
+    display: flex; 
+    flex-direction: column;
+}
+
+#menu nav ul li {
+    height: 50px; 
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 5px; 
+}
+
+#menu nav ul li a {
+    text-decoration: none;
+    color: rgb(7, 7, 7);
+    font-size: 13pt;
+    display: inline-flex; 
+    align-items: center;
+    margin-right: 15px; 
+}
+
+#menu nav ul li a img {
+    width: 30px; 
+    height: auto;
+    border-radius: 30%; 
+    margin-right: 10px; 
+}
+
+h1 {
+    margin-top: 15pt;
+    margin-bottom: 15pt; 
+}
+
+#content{
+    margin: 10px;
+}
+
+#content #cikkek{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+#content #cikkek .cikk{
+    width: 100%;
+    border: 1px black dotted;
+    padding: 20px;
+    margin: 0 5px;
+}
+
+#content #cikkek .cikk h2{
+    text-align: left;
+    margin-bottom: 15px;
+    background-color: rgb(223, 231, 222);
+}
+
+#content #cikkek .cikk ul{
+    text-indent: 15pt;
+    margin-left: 15pt;
+    padding-left: 5pt;
+}
+
+#content #cikkek .cikk ul li{
+    list-style:decimal;
+    list-style-position: inside;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 5px;
+}
+
+img{
+    width: 100px;
+    float: left;
+    padding-right: 15px;
+    margin-bottom: 5px;
+ }
+
+#content a {
+    text-decoration: none; 
+    font-weight: bold; 
+    color: rgb(7, 85, 85); 
+}
+
+#content .ketto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+#content .kep img {
+    height: 80px;
+    float: left;
+    padding-right: 15px;
+    margin-bottom: 15px;
+  }
+
+  #fuggosegek .ez{
+    border: 1pt black dotted;
+    padding: 20pt;
+    margin-bottom: 10pt;
+}
+
+#content #pelda{
+    border: 1px black dotted;
+    padding: 10pt;
+}
+
+#content #pelda .controll img{
+    width: 100px;
+    margin-top: 5pt;
+}
+
+#content #pelda img{
+width: 300px;
+}
+
+#content .fugg img{
+    float: right;
+    width: 130px;
+    margin: 10px;
+}
+
+
+@media (width >600px) and (width<1000px) {
+    #main {
+        flex-direction: column;
+    }
+
+    #logo{
+        display: none;
+    }
+  
+    #menu {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+  
+    #menu nav ul {
+        flex-direction: row;
+    }
+  
+    #menu nav ul li {
+        width: auto;
+        height: auto;
+        margin-left: 10px;
+        font-size: 8pt;
+        margin: 0pt;
+    }
+  
+    #menu nav ul li a img {
+        margin-right: 5px;
+    }
+
+    .ketto {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  }
+  
+  @media (width >200px) and (width<600px) {
+    #menu {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #menu nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #menu nav ul li {
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+  
+    #menu nav ul li a span {
+        display: none;
+    }
+  
+    #menu nav ul li a img {
+        width: 40px;
+        margin: 0;
+    }
+  
+    #main {
+        margin: 10px 2%;
+    }
+  
+    .tovabb .kep2 img {
+        width: 80px;
+        height: auto;
+    }
+  }
+  
